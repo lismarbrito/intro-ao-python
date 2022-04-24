@@ -46,3 +46,23 @@ print()
 # Para saber o tamanho de uma string podemos usar o método nativo len()
 print(f'Tamanho da string na variável "nome_doguinha": {len(nome_doguinha)}')
 print(f'Tamanho da string "ConstruDelas": {len("ConstruDelas")}')
+
+
+nome_doguinha2 = 'Meg'
+idade_doguinha2 = 5
+
+concatenacao2 = 'A ' + nome_doguinha2 + ' tem ' + str(idade_doguinha2) + ' anos.'
+print(concatenacao2)
+
+funcao_format2 = 'A {} tem {} anos.' .format(nome_doguinha2, str(idade_doguinha2))
+print(funcao_format2)
+
+interpolacao = f'A {nome_doguinha2} tem {str(idade_doguinha2)} anos.'
+print(interpolacao)
+
+print('A', nome_doguinha2, 'tem', idade_doguinha2, 'anos de idade')
+
+print(len(nome_doguinha2))
+
+print(len('Meg'))
+
