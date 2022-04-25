@@ -10,12 +10,12 @@ hoje = datetime.now().date()
 faltam_dias = str(abs((dataniver - hoje).days))
 print('Faltam ' + faltam_dias + ' para seu próximo aniversário.')
 # Pergunte ao usuário se ele(a) gosta de aniversário e salve a resposta
-aniversario_gosta = input('Você gosta de aniversário?')
+aniversario_gosta = input('Você gosta de aniversário? (SIM/NÃO)')
 # Pergunte ao usuário se ele(a) vai fazer festa e salve a resposta
-aniversario_festa = input('Você vai fazer festa no seu aniversário?')
+aniversario_festa = input('Você vai fazer festa no seu aniversário? (SIM/NÃO)')
 # Imprima uma mensagem dizendo se o usuário vai ganhar presente ou não
 # A regra é: o usuário só pode ganhar presente se gostar de aniversário e for fazer festa.
-if (aniversario_gosta == 'sim' and aniversario_festa== 'sim'):
+if ((aniversario_gosta.lower() == 'sim') or (aniversario_gosta.lower() == 's')) and ((aniversario_festa.lower() == 'sim') or (aniversario_festa.lower() == 's')):
     print('Você vai ganhar presente no seu aniversário!!!')
 else:
     print('Você não terá presente no seu aniversário.')
