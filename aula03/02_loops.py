@@ -64,7 +64,7 @@ while len(nomes):
 
 # O loop abaixo nunca terminaria
 idades = [20, 50, 33, 18, 25]
-#while len(idades):
+#while len(idades): faltou colocar o .pop
 #    print(idades)
 
 # Podemos usar o break para forçar a interrupção em um determinado momento
