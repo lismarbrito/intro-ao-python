@@ -47,7 +47,7 @@ inicio_inverno = datetime(2022, 6, 21, 6, 14, 00)
 inicio_primavera = datetime(2022, 9, 21, 22, 4, 00)
 inicio_verao = datetime(2022, 12, 21, 18, 48, 00)
 
-if hoje.year == 2022 and hoje < inicio_outono or hoje >= inicio_verao:
+if hoje.year == 2022 and hoje < inicio_outono and hoje >= inicio_verao:
 	print('Verão')
 elif hoje.year == 2022 and hoje >= inicio_outono and hoje < inicio_inverno:
 	print('Outono')
@@ -63,7 +63,7 @@ print()
 # Note como a lógica abaixo é menos clara.
 # Note como vários ifs 
 print("Em qual estação do ano nós estamos?")
-if hoje.year == 2022 and hoje < inicio_outono or hoje >= inicio_verao:
+if hoje.year == 2022 and hoje < inicio_outono and hoje >= inicio_verao:
 	print('Verão')
 if hoje.year == 2022 and hoje >= inicio_outono and hoje < inicio_inverno:
 	print('Outono')
@@ -78,7 +78,7 @@ print()
 # Comparação aninhada - blocos de if/else dentro de outros blocos de if/else
 # Note que o bloco de código dentro do primeiro `if` também precisa ser identado.
 if hoje.year == 2022:
-	if hoje < inicio_outono or hoje >= inicio_verao:
+	if hoje < inicio_outono and hoje >= inicio_verao:
 		print('Verão')
 	elif hoje >= inicio_outono and hoje < inicio_inverno:
 		print('Outono')
