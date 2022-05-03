@@ -7,9 +7,19 @@ notas = [78, 57, 80, 98, 54, 89, 90, 100, 71, 85]
 
 
 # Comece o programa perguntando o nome da aluna.
-
+nome = input('Qual é o seu nome?\n')
 
 # Procure o nome digitado na lista de nomes e imprima uma mensagem com a nota que ela tirou.
 # Notas abaixo de 60 devem ser impressas com a cor vermelha, e notas a partir de 90 devem ser
 # impressas com a cor verde.
 # Se o nome digitado não existir na lista, imprima uma mensagem de erro usando a cor vermelha.
+posicao = alunas.index(nome)
+
+print('A aluna ' + nome + 'tirou ' + notas(4))
+
+# print('índice | item')
+# for i in alunas:
+#     for j in notas:
+#     if i == nome:
+#     print(notas[j])
+        # print(f' A aluna {nome.lower}   |  {item}')
