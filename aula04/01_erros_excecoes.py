@@ -2,7 +2,7 @@
 quantidade = 10000
 print('quantidade:', quantidade)
 
-# if(quantidade = 3000)
+# if(quantidade = 3000)      falta colocar os : e esta comparando com apenas 1 igual = e o correto são com 2 ==
 # print("Você tem 3000 dinheiros.")
 
 # Exceções são lançadas por erros de lógica

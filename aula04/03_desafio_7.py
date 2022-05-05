@@ -7,14 +7,14 @@ def calcular_media(valores):
     for i, valor in enumerate(valores):
         soma += valor
         i += 1
-    media = soma / tamanho
+        media = soma / tamanho
 
 continuar = True
 valores = []
 while continuar:
     valor = input('Digite um número para entrar na sua média ou "ok" para calcular o valor:')
     if valor.lower() == 'ok':
-        continuar = false
+        continuar = False
 
-media = calcular_media(valores)
-print('A média calculada para os valores {} foi de {}'.format(valores, media))
+    media = calcular_media(valores)
+print(f'A média calculada para os valores {valores} foi de {media}'.format(valores, media))
