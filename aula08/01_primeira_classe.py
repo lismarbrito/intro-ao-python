@@ -1,6 +1,6 @@
 # Definição da classe
 class Televisao: # Conveção para nomes de classes: PascalCasing
-    def __init__(self):
+    def __init__(self): #semre começa a classe com o init
         self.ligada = False
         self.canal = 3
         self.canal_min = 1
@@ -16,34 +16,34 @@ class Televisao: # Conveção para nomes de classes: PascalCasing
         self.ligada = False
     
     def mudar_canal_para_cima(self):
-        if not self.ligada:
+        if not self.ligada:  #testa se a tv esta ligada
             return
 
         if self.canal < self.canal_max:
             self.canal += 1
 
     def mudar_canal_para_baixo(self):
-        if not self.ligada:
+        if not self.ligada:  #testa se a tv esta ligada
             return
 
         if self.canal > self.canal_max:
             self.canal -= 1
         
     def aumentar_volume(self):
-        if not self.ligada:
+        if not self.ligada: #testa se a tv esta ligada
             return
 
         if self.volume < self.volume_max:
             self.volume += 10
 
     def reduzir_volume(self):
-        if not self.ligada:
+        if not self.ligada: #testa se a tv esta ligada
             return
 
         if self.volume > self.volume_min:
             self.volume -= 10
-
-    def __str__(self) -> str:
+    # retorna uma string
+    def __str__(self) -> str: 
         return f'Televisao - ligada {self.ligada} - canal {self.canal} - volume {self.volume}'
 
 # Criando instâncias da class Televisao
@@ -56,7 +56,7 @@ tv_sala.ligar()
 print('tv_sala está ligada? {}'.format(tv_sala.ligada))
 print('tv_quarto está ligada? {}'.format(tv_quarto.ligada))
 
-for _ in range(3):
+for _ in range(3):  #aumentou o volume 3x
     tv_sala.aumentar_volume()
 
 print('tv_sala volume: {}'.format(tv_sala.volume))

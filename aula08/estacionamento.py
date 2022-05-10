@@ -48,15 +48,15 @@ class Vaga:
 
 class Estacionamento:
     def __init__(self, total_vagas_livres_carro, total_vagas_livres_moto):
-        self.carro_para_vaga = {}
-        self.moto_para_vaga = {}
+        self.carro_para_vaga = {} #representado por dicionário
+        self.moto_para_vaga = {}  #representado por dicionário vazio
         self.total_vagas_livres_carro = total_vagas_livres_carro
         self.total_vagas_livres_moto = total_vagas_livres_moto
         self.inicializar_vagas()
 
     def inicializar_vagas(self):
-        self.vagas_carro = {} # id da vaga para a placa do carro
-        self.vagas_moto = {} # id da vaga para a placa da moto
+        self.vagas_carro = {} # id da vaga para o objeto do tipo vaga
+        self.vagas_moto = {} # id da vaga para o objeto do tipo vaga
 
         tipo = 'carro'
         for i in range(self.total_vagas_livres_carro):

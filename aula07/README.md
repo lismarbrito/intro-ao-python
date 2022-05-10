@@ -16,7 +16,7 @@ def funcao():
 * Para entender como _decorators_ funcionam, precisamos primeiro entender alguns conceitos sobre funções.
 
 ### 01_funcoes_objetos_de_primeira_classe.py
-* Em Python, ser um objeto de primeira classe significa que funções podem ser salvas em variávies, usadas ou passadas como argumentos e retornadas de outras funções.
+* Em Python, ser um objeto de primeira classe significa q.ue funções podem ser salvas em variávies, usadas ou passadas como argumentos e retornadas de outras funções.
   * É possível salvar funções dentro de estruturas de dados, como listas, dicionários, _sets_, etc.
 * **Funções aninhadas** (_nested functions_): funções definidas dentro de outra função.
   * Podemos definir funções dentro de outra função.

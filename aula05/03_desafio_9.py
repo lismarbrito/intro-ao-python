@@ -43,5 +43,10 @@ If anything could ever be this good again
 The only thing I'll ever ask of you
 You've got to promise not to stop when I say when
 """
+lista = everlong_foo_fighters.split()
+# lista.sort()
+sorted(lista)
+textofinal = set(lista)
+print(textofinal)
 
 

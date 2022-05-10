@@ -13,7 +13,7 @@ d2 = dict() # dicionário vazio
 ```
 * Os valores em dicionários são guardados como se estivessem em um mapa, onde as coordenadas são a chave.
   * Dicionários são otimizados para guardar e retonar valores de maneira "instantânea".
-* Dicionários **não** são ordenados. Não há garantia de que, ao se iterar em um dicionário, as chaves vão aparecer na mesma ordem.
+* A partir do Python 3.8 os dicionários são ordenados. ANtes os Dicionários **não** são ordenados. Não há garantia de que, ao se iterar em um dicionário, as chaves vão aparecer na mesma ordem.
 * Valores em dicionários podem ser de qualquer tipo e podem ser duplicados, enquanto chaves não podem ser repetidas e precisam ser imutáveis. 
 ```python
 # dicionário com chaves string e valores de diferentes tipos
