@@ -3,4 +3,13 @@
 # Exemplo de entrada: Oi mulheres maravilhosas do curso de Python do ConstruDelas!
 # Exemplo de saída: !saleDurtsnoC od nohtyP ed\nosruc od sasohlivaram serehlum iO
 
-arquivo = 'entrada_desafio_11.txt'
+arquivo_entrada = 'entrada_desafio_11.txt'
+with open(arquivo_entrada, 'r') as arquivo01:
+    text = arquivo01.read()
+    print('read():')
+    print(text)
+
+arquivo_saida = 'entrada_desafio_11.txt'
+with open(arquivo_saida, 'w') as arquivo02:
+    text2 = arquivo02.write(text[::-1])
+    print(text2)
